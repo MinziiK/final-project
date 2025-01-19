@@ -1,23 +1,30 @@
 .title {
     width: 100%;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
 
 .sub-menu {
     width: 100%;
     text-align: center;
-    
 }
+
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sub-menu a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+  }
 
 .font-style {
     text-decoration: none;
     font-size: 20px;
-    color: black;
+    color: #333;
 }
 
 .font-style:hover {
     text-decoration: underline;
 }
-
