@@ -8,10 +8,15 @@
 .sub-menu {
     width: 100%;
     text-align: center;
+    
+}
+
+.font-style {
     text-decoration: none;
     color: black;
 }
 
-.sub-menu:hover {
+.font-style:hover {
     text-decoration: underline;
 }
+
