@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트 – 교보문고</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="event.css" />
+  </head>
+  <body>
+    <!-- 상단 네브바 -->
+    <!-- 1번 최상단 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-1">
+      <div class="navbar container" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-1-l">
+          <li class="nav-item tab-book nav-1-l-tab">
+            <a class="nav-link " href="#">교보문고</a>
+          </li>
+          <li class="nav-item tab-ebook nav-1-l-tab">
+            <a class="nav-link" href="#">eBook</a>
+          </li>
+          <li class="nav-item tab-sam nav-1-l-tab">
+            <a class="nav-link" href="#">sam</a>
+          </li>
+          <li class="nav-item tab-hot nav-1-l-tab">
+            <a class="nav-link" href="#">핫트랙스</a>
+          </li>
+          <li class="nav-item tab-story nav-1-l-tab">
+            <a class="nav-link" href="#">스토리</a>
+          </li>
+          <li class="nav-item dropdown tab-brand">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              브랜드 더보기
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">바로출판</a></li>
+              <li><a class="dropdown-item" href="#">리드로그</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- 최상단 오른쪽 -->
+        <ul class="navbar-nav nav-1-r">
+          <li class="nav-item">
+            <a class="nav-link" href="#">회원가입</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">로그인</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              회원혜택
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">교보북클럽</a></li>
+              <li><a class="dropdown-item" href="#">등급 혜택</a></li>
+              <li><a class="dropdown-item" href="#">신규회원 혜택</a></li>
+              <li><a class="dropdown-item" href="#">Prestige Lounge</a></li>
+              <li><a class="dropdown-item" href="#">제휴 혜택</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">주문배송</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">매장안내</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">고객센터</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-23">
+      <div class="container">
+        <div class="row">
+          <!-- 2번 검색창 라인  -->
+          <div class="row justify-content-between nav-2">
+            <div class="col" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="nav-logo">
+                  <img
+                    src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/united/logo_book.svg"
+                    alt=""
+                  />
+                </div>
+                <form class="d-flex" role="search">
+                  <div class="input-group mt-3 ms-4 nav-search">
+                    <button
+                      class="btn btn-outline-secondary dropdown-toggle btn-left"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      통합검색
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">통합검색</a></li>
+                      <li><a class="dropdown-item" href="#">교보문고</a></li>
+                      <li><a class="dropdown-item" href="#">eBook</a></li>
+                      <li><a class="dropdown-item" href="#">sam</a></li>
+                      <li><a class="dropdown-item" href="#">핫트랙스</a></li>
+                    </ul>
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Text input with dropdown button"
+                    />
+                    <button
+                      class="btn btn-outline-secondary btn-right"
+                      type="button"
+                      id="button-addon2"
+                    >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </form>
+              </ul>
+            </div>
+            <!-- 검색창 오른쪽 -->
+            <div class="col-2">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <button class="btn btn-secondary">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-secondary">
+                    <i class="fa-regular fa-user"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3번 네브바 하단  -->
+          <div class="navbar" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">비밀교환</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">책책책을</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/best.html">베스트</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">신상품</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/event.html"
+                  >이벤트</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/funding.html">바로펀딩</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pick.html">PICKS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CASTing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">컬처라운지</a>
+              </li>
+              <!-- 이름 없는 드롭다운 메뉴 -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">바로드림</a></li>
+                  <li><a class="dropdown-item" href="#">오늘의 선택</a></li>
+                  <li><a class="dropdown-item" href="#">책 그리고 꽃</a></li>
+                  <li><a class="dropdown-item" href="#">이달의 책</a></li>
+                  <li><a class="dropdown-item" href="#">기프트카드</a></li>
+                  <li><a class="dropdown-item" href="#">문화공간</a></li>
+                  <li><a class="dropdown-item" href="#">베스트리뷰</a></li>
+                  <li><a class="dropdown-item" href="#">수준별원서읽기</a></li>
+                  <li><a class="dropdown-item" href="#">POD</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- 하단 오른쪽 -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">오늘의 미션</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">할인혜택</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  읽카탈겨울호
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><img src="https://contents.kyobobook.co.kr/display/i_1200_391_34b8cf9db8d6446f8a2266dbbac44f98.jpg" alt=""></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav> 
+
+    <!-- 메인 컨텐츠 -->
+    <main class="container mt-4">
+      <!-- 홈/이벤트 -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">이벤트</li>
+        </ol>
+      </nav>
+      <h1>이벤트</h1>
+      <!-- 이벤트 배너 -->
+      <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide col-8">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                width="800"
+                height="400"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: First slide"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#777"></rect>
+                <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+              </svg>
+            </div>
+            <div class="carousel-item">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                width="800"
+                height="400"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Second slide"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#666"></rect>
+                <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+              </svg>
+            </div>
+            <div class="carousel-item">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                width="800"
+                height="400"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Third slide"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#555"></rect>
+                <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+              </svg>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fa-solid fa-thumbs-up"></i>추천</li>
+            <li class="list-group-item">읽는 친구끼리 독서기록장 ✒️</li>
+            <li class="list-group-item">2025 새해 첫 책 추천 📘</li>
+            <li class="list-group-item">비즈니스 리더의 선택 🏦</li>
+            <li class="list-group-item">21세기 클래식 50 🥇</li>
+            <li class="list-group-item">올해의 책 중의 책 👑</li>
+            <li class="list-group-item">EBS 수능특강 판매시작! 🐨</li>
+            <li class="list-group-item">새해, 새 마음가짐 🏃🏻‍♀️</li>
+            <li class="list-group-item">박정민 배우와 10문 10답 🎤</li>
+            <li class="list-group-item">겨울방학 목표달성 📚</li>
+            <li class="list-group-item">겨울방학 기획전 X 김토끼 🐰</li>
+          </ul>
+        </div>
+      </div>
+      <!-- 동그라미들 -->
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-ticket"></i>
+          </button>
+          <p>쿠폰·혜택</p>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-gifts"></i>
+          </button>
+          <p>회원혜택</p>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-bullseye"></i>
+          </button>
+          <p>오늘의 미션</p>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-gift"></i>
+          </button>
+          <p>사은품</p>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-book"></i>
+          </button>
+          <p>특가도서</p>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-calendar-days"></i>
+          </button>
+          <p>기대 신간 캘린더</p>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-video"></i>
+          </button>
+          <p>이달의 문화콘텐츠</p>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-bullhorn"></i>
+          </button>
+          <p>당첨자 발표</p>
+        </div>
+      </div>
+      <!-- 이벤트 검색창 -->
+      <div class="row justify-content-end">
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Recipient's username"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 추천 키워드 -->
+      <div class="row">
+        <div class="col-auto">추천 키워드</div>
+        <div class="col-auto"><button type="button" class="btn btn-primary">사은품</button></div>
+        <div class="col-auto"><button type="button" class="btn btn-primary">경품</button></div>
+        <div class="col-auto"><button type="button" class="btn btn-primary">신간</button></div>
+        <div class="col-auto"><button type="button" class="btn btn-primary">소설</button></div>
+        <div class="col-auto"><button type="button" class="btn btn-primary">시에세이</button></div>
+        <div class="col-auto"><button type="button" class="btn btn-primary">종교</button></div>
+        <div class="col-auto"><button type="button" class="btn btn-primary">어린이</button></div>
+      </div>
+      <!-- 이벤트 라디오 버튼 -->
+      <div class="row">
+        <div class="col">
+          <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off" checked>
+          <label class="btn" for="option1">전체체</label>
+        </div>
+        <div class="col">
+          <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+          <label class="btn" for="option2">국내도서</label>
+        </div>
+        <div class="col">
+          <input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off">
+          <label class="btn" for="option3">외국도서</label>
+        </div>
+        <div class="col">
+          <input type="radio" class="btn-check" name="options-base" id="option4" autocomplete="off">
+          <label class="btn" for="option4">PB상품</label>
+        </div>
+        <div class="col">
+          <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off">
+          <label class="btn" for="option5">컬쳐</label>
+        </div>
+        <div class="col">
+          <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+          <label class="btn" for="option6">eBook</label>
+        </div>
+        <div class="col">
+          <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+          <label class="btn" for="option7">sam</label>
+        </div>
+        <div class="col">
+          <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+          <label class="btn" for="option8">핫트랙스</label>
+        </div>
+      </div>
+      
+
+      <!-- 이벤트 리스트 -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="이벤트 이미지 1" />
+            <div class="card-body">
+              <h5 class="card-title">이벤트 제목 1</h5>
+              <p class="card-text">이벤트 날짜</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="이벤트 이미지 2" />
+            <div class="card-body">
+              <h5 class="card-title">이벤트 제목 2</h5>
+              <p class="card-text">이벤트 날짜</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+      <div class="container">
+        <!-- 공지 라인 -->
+        <div class="row">
+          <div class="col-1">공지사항</div>
+          <div class="col-4"><a href="">컬쳐랜드 시스템 점검 안내</a></div>
+          <div class="col-2">당첨자발표</div>
+          <div class="col-5"><a href="">[BL소설][독점] 24년 12월 페일블루 BL 브랜드관 당첨자 발표</a></div>
+        </div>
+        <!-- 교보로고 라인 -->
+        <div class="row justify-content-between">
+          <div class="col-auto">
+            <img src="" alt="교보문고">
+          </div>
+          <div class="col-auto">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Family Site
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">교보생명</a></li>
+                <li><a class="dropdown-item" href="#">교보증권</a></li>
+                <li><a class="dropdown-item" href="#">교보DTS</a></li>
+                <li><a class="dropdown-item" href="#">교보리얼코</a></li>
+                <li><a class="dropdown-item" href="#">교보악사자산운용</a></li>
+                <li><a class="dropdown-item" href="#">교보라이프플래닛생명</a></li>
+                <li><a class="dropdown-item" href="#">KCA 손해사정</a></li>
+                <li><a class="dropdown-item" href="#">KCA 서비스</a></li>
+                <li><a class="dropdown-item" href="#">교보자산신탁주식회사</a></li>
+                <li><a class="dropdown-item" href="#">대산문화재단</a></li>
+                <li><a class="dropdown-item" href="#">교보교육재단</a></li>
+                <li><a class="dropdown-item" href="#">대산농촌재단</a></li>
+              </ul>
+            </div>
+            <span><i class="fa-solid fa-play"></i></span>
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+          </div>
+        </div>
+        <!-- 회사소개 라인 -->
+        <div class="row">
+          <div class="col-8">
+            <div>
+              <span><a href="#">회사소개</a></span>
+              <span><a href="#">이용약관</a></span>
+              <span><a href="#">개인정보처리방침</a></span>
+              <span><a href="#">청소년보호정책</a></span>
+              <span><a href="#">대량주문안내</a></span>
+              <span><a href="#">협력사여러분</a></span>
+              <span><a href="#">채용정보</a></span>
+              <span><a href="#">광고소개</a></span>
+            </div>
+            <div>
+              <span>대표이사 : 안병현, 김상훈</span>
+              <span>서울특별시 종로구 종로 1</span>
+              <span>사업자등록번호 : 102-81-11670</span>
+              <br>
+              <span>대표전화 : 1544-1900(발신자 부담전화)</span>
+              <span>FAX : 0502-987-5711(지역번호 공통)</span>
+              <span>서울특별시 통신판매업신고번호 : 제 653호</span>
+              <span><button>사업자정보확인</button></span>
+            </div>
+            <div>
+              <span>© KYOBO BOOK CENTRE</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <span>토스페이먼츠 구매안전서비스</span>
+              <span><button>서비스 가입 확인</button></span>
+              <p>고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한
+                 <br>토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다.</p>
+            </div>
+            <div>
+              <span><img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/img_mark_isms@2x.png" alt=""><a href="#">정보보호관리체계<br>ISMS 인증획득</a></span>
+              <span>[인증범위] 인터넷 교보문고 및 브랜드 서비스 운영<br>[유효기간] 2023.11.15 ~ 2026.11.14
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

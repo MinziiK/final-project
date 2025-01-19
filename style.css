@@ -1,0 +1,17 @@
+.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sub-menu {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.sub-menu:hover {
+    text-decoration: underline;
+}

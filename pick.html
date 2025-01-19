@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>교보문고 - PicPic</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/22f07635c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    <!-- Top Navigation -->
+      <div class="top-nav pt-2">
+        <div class="container">
+          <div class="d-flex">
+            <div class="d-flex justify-content-center flex-grow-1">
+              <div class="d-flex align-items-center none">
+                <ul class="nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link first kyobo" href="#">교보문고</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link first ebook" href="#">eBook</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link first sam" href="#">sam</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link first hottracks" href="#">핫트랙스</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link first story" href="#"
+                      ><span>스토리</span>
+                      <span class="ms-2 mb-3">
+                        <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        style="font-size: 10px"
+                      ></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="dropdown">
+                  <a href="#" class="brand-more">
+                    브랜드 더보기 <i class="fas fa-chevron-down"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#">매장안내</a>
+                    <a href="#">브랜드 소개</a>
+                    <a href="#">제휴카드</a>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="right-menu">
+              <a href="#">로그아웃</a>
+              <div class="dropdown">
+                <a href="#">회원혜택 <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                  <a href="#">등급별 혜택</a>
+                  <a href="#">쿠폰/포인트</a>
+                  <a href="#">이벤트</a>
+                </div>
+              </div>
+              <a href="#">주문배송</a>
+              <a href="#">매장안내</a>
+              <a href="#">고객센터</a>
+            </div>
+          </div>
+        </div>
+     </div>
+      
+
+        <!-- 플로팅 보드 -->
+        <div class="floating-board">
+          <div class="floating-item">
+            <img src="https://www.ktmmobile.com/resources/upload/editor/202405312029560010/202405312029566e26eda3ff5944ba9001b034565c549b.png" alt="이벤트" class="floating-img">
+            <span>이벤트</span>
+          </div>
+          <div class="floating-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH1bDEUzC37FeyoJraOSsnh5txDJgxf4mZcA&s" alt="프리패스" class="floating-img">
+            <span>프리패스</span>
+            <span class="badge">13권</span>
+          </div>
+          <div class="floating-item">
+            <img src="https://img.29cm.co.kr/next-edition/2022/02/07/a9a16a189d80439788fbe6b1c252037a_20220207153814.png" alt="쿠폰/혜택" class="floating-img">
+            <span>쿠폰/혜택</span>
+          </div>
+          <div class="top-button mt-5">
+            <a href="#" class="top-link">TOP</a>
+          </div>
+        </div>
+
+    
+
+      <!-- Main Navigation -->
+      
+        <div class="container d-flex align-items-center justify-content-between nav-main">
+          <!-- 왼쪽 그룹 (로고 + 검색창) -->
+           <div class="d-flex align-items-center mt-3">
+
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/img_logo_kyobo@2x.png"
+                alt="KYOBO"
+                class="logo me-3"
+              />
+            </a>
+          
+            <div class="search-bar ms-3">
+              <div class="input-group search-logo">
+                <div class="dropdown search-dropdown">
+                  <a href="#" class="dropdown-text">
+                    통합검색
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                </div>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  placeholder="검색어를 입력하세요"
+                />
+                <button class="search-btn" type="button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <!-- 오른쪽 그룹 (아이콘들) -->
+          <div class="right-section none">
+            <a href="#" class="icon-link me-3">
+              <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            </a>
+            <a href="#" class="icon-link">
+              <i class="fa-solid fa-user fa-2x"></i>
+            </a>
+          </div>
+
+        </div>
+    
+
+      <!-- Category Navigation -->
+    <div class="container">
+      <div class="d-flex nav-menu align-items-center">
+        <div class="container">
+          <ul class="nav">
+            <li class="nav-item fa-bars fa-2x">
+              <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link green ms-2" href="#">비밀교환<i class="fa-solid fa-face-smile smile ms-1"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link green" href="#">책책책을</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/best.html">베스트</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">신상품</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/event.html">이벤트</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/funding.html">바로펀딩</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/pick.html"><strong>PICKS</strong></a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CASTing</a>
+            </li>
+            <li class="nav-item none">
+              <a class="nav-link fs-6" href="#">컬처라운지</a>
+            </li>
+            <li class="nav-item circle-plus none">
+              <i class="fa-solid fa-circle-plus" id="toggleBtn"></i>
+              <div class="toggle-menu" id="toggleMenu">
+                <ul class="list-unstyled">
+                  <li><a href="#">바로드림</a></li>
+                  <li><a href="#">오늘의 선택</a></li>
+                  <li><a href="#">책 그리고 콕</a></li>
+                  <li><a href="#">이달의 책</a></li>
+                  <li><a href="#">기프트카드</a></li>
+                  <li><a href="#">문화공간</a></li>
+                  <li><a href="#">베스트리뷰</a></li>
+                  <li><a href="#">수준별원서읽기</a></li>
+                  <li><a href="#">POD</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex cat-nav align-items-center none">
+          <a href="#">오늘의 미션</a>
+          <a href="#">할인혜택</a>
+          <a href="#">읽카탈겨울호</a>
+        </div>
+      </div>
+
+      <!--Middle Spacce-->
+      <div class="d-flex mb-5 mt-3 ms-3">
+        <a href="#" class="icon-link"><i class="fa-solid fa-house"></i></a>
+        <div class="me-2 ms-2">/</div>
+        <a href="#" class="icon-link">picks</a>
+      </div>
+
+      <!-- Main Banner -->
+      <div class="main-banner">
+        <div class="container ms-md-5 ms-0">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-container">
+              <h2>정재근 님과 꼭 맞는 추천 Picks</h2>
+              <p class="mt-3">나의 독서 패턴을 통해 추천 도서를 살펴볼까요?</p>
+              <button class="btn-custom mt-3">추천 도서 받기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- 본문: 탭 메뉴(Picks) -->
+    <div class="container underline mt-5">
+      <!-- 탭 버튼 -->
+      <ul class="nav nav-tabs underline" id="picksTab" role="tablist">
+        <li class="nav-item flex-grow-1" role="presentation">
+          <button
+            class="nav-link second active"
+            id="my-picks-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#myPicksTabPane"
+            type="button"
+            role="tab"
+            aria-controls="myPicksTabPane"
+            aria-selected="true"
+          >
+            마이 Picks
+          </button>
+        </li>
+        <li class="nav-item  flex-grow-1 " role="presentation">
+          <button
+            class="nav-link second"
+            id="keyword-pick-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#keywordPickTabPane"
+            type="button"
+            role="tab"
+            aria-controls="keywordPickTabPane"
+            aria-selected="false"
+          >
+            키워드 Pick
+          </button>
+        </li>
+        <li class="nav-item flex-grow-1" role="presentation">
+          <button
+            class="nav-link second second"
+            id="johap-pick-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#johapPickTabPane"
+            type="button"
+            role="tab"
+            aria-controls="johapPickTabPane"
+            aria-selected="false"
+          >
+            종합 Pick
+          </button>
+        </li>
+        <li class="nav-item flex-grow-1" role="presentation">
+          <button
+            class="nav-link second"
+            id="click-realtime-pick-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#clickRealtimeTabPane"
+            type="button"
+            role="tab"
+            aria-controls="clickRealtimeTabPane"
+            aria-selected="false"
+          >
+            클릭 실시간 Pick
+          </button>
+        </li>
+        <li class="nav-item flex-grow-1" role="presentation">
+          <button
+            class="nav-link second"
+            id="writer-pick-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#writerPickTabPane"
+            type="button"
+            role="tab"
+            aria-controls="writerPickTabPane"
+            aria-selected="false"
+          >
+            작가 Pick
+          </button>
+        </li>
+        <li class="nav-item flex-grow-1" role="presentation">
+          <button
+            class="nav-link second"
+            id="soulmate-pick-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#soulmatePickTabPane"
+            type="button"
+            role="tab"
+            aria-controls="soulmatePickTabPane"
+            aria-selected="false"
+          >
+            소울메이트 Pick
+          </button>
+        </li>
+        
+      </ul>
+
+      <!-- 탭 콘텐츠 -->
+      <div class="tab-content mt-5" id="picksTabContent">
+        <!-- 마이 픽 탭 -->
+        <div
+          class="tab-pane fade show active"
+          id="myPicksTabPane"
+          role="tabpanel"
+          aria-labelledby="my-picks-tab"
+          tabindex="0"
+        >
+        
+        <div class="title-section">
+          <h1>마이 Picks</h1>
+          <p>독서 패턴을 통해 추천 도서를 살펴볼까요?</p>
+        </div>
+      
+        <!-- 메인 레이아웃: 왼쪽 카드 / 오른쪽 카드 -->
+        <div class="row g-4">
+          
+          <!-- 왼쪽 카드 -->
+          <div class="col-12 col-md-5">
+            <div class="custom-card text-center h-100 d-flex flex-column justify-content-center align-items-center">
+              <!-- 큰 아이콘 -->
+              <i class="fa-solid fa-book fa-4x mb-3"></i>
+              <p class="text-muted mb-4">
+                회원님의 취향을 알 수 있게<br>
+                아래 버튼을 통해 <strong>추천 도서</strong>를 평가해 주세요!
+              </p>
+              <a href="#" class="btn btn-outline-dark btn-lg go-button">
+                추천 도서 평가 늘리기
+              </a>
+            </div>
+          </div>
+      
+          <!-- 오른쪽 카드: 최근 인기 있는 작가 -->
+          <div class="col-12 col-md-7">
+            <div class="custom-card h-100">
+              <h4 class="fw-bold mb-4">최근 인기 있는 작가를 만나보세요!</h4>
+              
+              <div class="author-list mt-4">
+                <div class="d-flex align-items-center writer">
+                  <!-- 작가 1 -->
+                  <div class="author-item me-5">
+                    <img 
+                      src="https://cdn.inflearn.com/public/users/thumbnails/694277/60d324e4-719f-4551-8f3c-f377b7eb1f78" 
+                      alt="한강 프로필"
+                    >
+                    <p class="author-name">코알누</p>
+                    <i class="fa-regular fa-heart ms-2 heart-icon"></i>
+                  </div>
+                  
+                  <!-- 작가 2 -->
+                  <div class="author-item ms-5 ">
+                    <img 
+                      src="https://i.namu.wiki/i/YeFXjlV3FBRXxpDSrNT9nlNp8n-ls_VEy07uFvtIOnFNjQnRWihgQQIX5tQOoQK1qrWxOB-oPGUfmt9dLSKTsQ.webp" 
+                      alt="백희나 프로필"
+                    >
+                    <p class="author-name">백희나</p>
+                    <i class="fa-regular fa-heart ms-2 heart-icon"></i>
+                  </div>
+                </div>
+                
+                <div class="d-flex align-items-center mt-4">
+                  <!-- 작가 3 -->
+                  <div class="author-item me-5">
+                    <img 
+                      src="https://i.ytimg.com/vi/d6VDWqHfqLw/maxresdefault.jpg" 
+                      alt="김소영 프로필"
+                    >
+                    <p class="author-name">김소영</p>
+                    <i class="fa-regular fa-heart ms-2 heart-icon"></i>
+                    
+                  </div>
+        
+                  <!-- 작가 4 -->
+                  <div class="author-item ms-5">
+                    <img 
+                      src="https://contents.kyobobook.co.kr/bcast/casting/contents/06604daa44df4695bae349b17836da23.jpg" 
+                      alt="채사장 프로필"
+                    >
+                </div>
+                  <p class="author-name">채사장</p>
+                  <i class="fa-regular fa-heart ms-2 heart-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+          </div>
+
+          <div
+          class="tab-pane fade"
+          id="keywordPickTabPane"
+          role="tabpanel"
+          aria-labelledby="keywordPickTab">
+          <div class="container py-4">
+          
+          
+            <!-- 도서 리스트(카드) -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          
+              <!-- 카드 예시 1 -->
+              <div class="col">
+                <div class="card h-100 book-card">
+                  <!-- 이미지 -->
+                  <img 
+                    src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791173320224.jpg" 
+                    class="card-img-top" 
+                    alt="세계사 탐험대 이미지"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title">[어린이(초등)] <br> 혼자할래 세계사 탐험대 1</h5>
+                    <!-- 별점 + 평점 -->
+                    <div class="mb-2">
+                      <span class="rating-text">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        9.84
+                      </span>
+                      <span class="review-text">(60명 리뷰)</span>
+                    </div>
+                    <!-- 키워드/배지 -->
+                    <div class="badge-container mb-2">
+                      <span class="badge bg-primary">키워드</span>
+                      <span class="badge bg-success">어린이</span>
+                      <span class="badge bg-warning text-dark">역사</span>
+                    </div>
+                    <p class="card-text">어린이를 위한 모험 가득한 세계사 이야기!</p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center justify-content-between">
+                    <!-- 좋아요 -->
+                    <div class="text-muted">
+                      <i class="bi bi-heart-fill like-button"></i>150
+                    </div>
+                    <!-- 상세보기 버튼 -->
+                    <a href="#" class="btn btn-sm btn-outline-primary">상세보기</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 카드 예시 2 -->
+              <div class="col">
+                <div class="card h-100 book-card">
+                  <img 
+                    src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791129713834.jpg" 
+                    class="card-img-top" 
+                    alt="최초한의 노트"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title">[청소년] 원하는 성적을 만드는 최소한의 노트정리</h5>
+                    <div class="mb-2">
+                      <span class="rating-text">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        10
+                      </span>
+                      <span class="review-text">(17명 리뷰)</span>
+                    </div>
+                    <div class="badge-container mb-2">
+                      <span class="badge bg-primary">키워드</span>
+                      <span class="badge bg-info text-dark">청소년</span>
+                      <span class="badge bg-secondary">학습</span>
+                    </div>
+                    <p class="card-text">효율적인 노트정리로 성적 향상에 도움이 되는 방법!</p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center justify-content-between">
+                    <div class="text-muted">
+                      <i class="bi bi-heart like-button"></i>42
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">상세보기</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- 카드 예시 3 -->
+              <div class="col">
+                <div class="card h-100 book-card">
+                  <img 
+                    src="https://image.yes24.com/goods/91729712/XL" 
+                    class="card-img-top" 
+                    alt="CHANGE 9번 NAIL"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title">[경제/경영] CHANGE 9</h5>
+                    <div class="mb-2">
+                      <span class="rating-text">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        9.44
+                      </span>
+                      <span class="review-text">(10명 리뷰)</span>
+                    </div>
+                    <div class="badge-container mb-2">
+                      <span class="badge bg-primary">키워드</span>
+                      <span class="badge bg-danger">경제</span>
+                      <span class="badge bg-dark">성장</span>
+                    </div>
+                    <p class="card-text">미래의 경제 흐름과 변화를 예측하고 대응하는 전략을 제시.</p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center justify-content-between">
+                    <div class="text-muted">
+                      <i class="bi bi-heart-fill like-button"></i>88
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">상세보기</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- 카드 예시 4 -->
+              <div class="col">
+                <div class="card h-100 book-card">
+                  <img 
+                    src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791193653050.jpg" 
+                    class="card-img-top" 
+                    alt="매우야 하루 10만 1000일의 열어 필사"
+                  >
+                  <div class="card-body">
+                    <h5 class="card-title">[에세이] 하루 10분 1000일의 영어 필사</h5>
+                    <div class="mb-2">
+                      <span class="rating-text">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        9.82
+                      </span>
+                      <span class="review-text">(25명 리뷰)</span>
+                    </div>
+                    <div class="badge-container mb-2">
+                      <span class="badge bg-primary">키워드</span>
+                      <span class="badge bg-warning text-dark">에세이</span>
+                    </div>
+                    <p class="card-text">하루 10분 글쓰기로 인생을 변화시키는 작은 습관 만들기.</p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center justify-content-between">
+                    <div class="text-muted">
+                      <i class="bi bi-heart like-button"></i>64
+                    </div>
+                    <a href="#" class="btn btn-sm btn-outline-primary">상세보기</a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- 추가 카드들은 같은 방식으로 반복해서 작성 -->
+              <!-- 필요하다면 총 30개까지 자유롭게 늘려주세요. -->
+          
+            </div>
+            <!-- /도서 리스트 -->
+          
+          </div>
+          </div>
+
+          <div
+          class="tab-pane fade"
+          id="johapPickTabPane"
+          role="tabpanel"
+          aria-labelledby="johapPickTab">
+          <div class="container">
+
+            <!-- 타이틀 섹션 -->
+            <div class="title-section">
+              <h1>종합 Pick</h1>
+              <p>당신의 취향을 비교분석하여 이틀밤샛 고민하여 고른책이에요!</p>
+            </div>
+            
+            <!-- 카드 1 예시 -->
+            <div class="recommend-card">
+              <div class="row g-3 align-items-center">
+                <!-- 좌측 이미지 영역 -->
+                <div class="col-12 col-md-2">
+                  <img 
+                    src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/3904000504957.jpg" 
+                    alt="보그(2025년 02월호)(D형) 표지" 
+                    class="book-thumbnail"
+                  >
+                </div>
+                <!-- 중앙 텍스트 영역 -->
+                <div class="col-12 col-md-6 book-info">
+                  <h5>[패션/유행] 보그(2025년 02월호)(D형)</h5>
+                  <p class="book-meta">
+                    두산매거진 편집부 · 두산매거진
+                  </p>
+                  <p>
+                    <span class="rating-text">0.0</span>
+                    <span class="review-count">(0개 리뷰)</span>
+                  </p>
+                  <!-- 액션 버튼들 -->
+                  <div class="btn-group-custom d-flex gap-2">
+                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                      <i class="bi bi-emoji-frown me-1"></i>취향 아니에요
+                    </button>
+                    <button type="button" class="btn btn-outline-success btn-sm">
+                      <i class="bi bi-emoji-smile me-1"></i>읽어보고 싶어요
+                    </button>
+                  </div>
+                </div>
+                <!-- 우측 지표 영역 -->
+                <div class="col-12 col-md-4 right-metrics">
+                  <div class="metrics-title">이 책 추천에 고려된 요소들</div>
+                  <div class="metrics-list my-2">
+                    <!-- 분야 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">0%</div>
+                      <div>분야</div>
+                    </div>
+                    <!-- 소울메이트 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">0%</div>
+                      <div>소울메이트</div>
+                    </div>
+                    <!-- 신간 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">0%</div>
+                      <div>신간</div>
+                    </div>
+                    <!-- 베스트 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">100%</div>
+                      <div>베스트</div>
+                    </div>
+                    <!-- 글로버 평점(예: 0.0/10) -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">0.0/10</div>
+                      <div>글로버 평점</div>
+                    </div>
+                  </div>
+                  <div class="keyword-pick">키워드 Pick</div>
+                </div>
+              </div>
+            </div>
+            <!-- /카드 1 -->
+          
+            <!-- 카드 2 예시 -->
+            <div class="recommend-card">
+              <div class="row g-3 align-items-center">
+                <!-- 좌측 이미지 영역 -->
+                <div class="col-12 col-md-2">
+                  <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzHkYKhAY3bOezbjl7Z871NdSs45J5_6i1qA&s" 
+                    alt="소년이 온다 표지" 
+                    class="book-thumbnail"
+                  >
+                </div>
+                <!-- 중앙 텍스트 영역 -->
+                <div class="col-12 col-md-6 book-info">
+                  <h5>[한국소설/일반] 소년이 온다</h5>
+                  <p class="book-meta">
+                    한강 · 창비
+                  </p>
+                  <p>
+                    <span class="rating-text">9.79</span>
+                    <span class="review-count">(3,193개 리뷰)</span>
+                  </p>
+                  <p class="mb-2">
+                    말라파르테 문학상, 만해문학상 수상작... 우리 시대의 소설 『소년이 온다』
+                  </p>
+                  <!-- 추가 링크/텍스트 (예: "고마워요") -->
+                  <a href="#" class="text-decoration-none text-primary">고마워요</a>
+                  <!-- 액션 버튼들 -->
+                  <div class="btn-group-custom d-flex gap-2 mt-2">
+                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                      <i class="bi bi-emoji-frown me-1"></i>취향 아니에요
+                    </button>
+                    <button type="button" class="btn btn-outline-success btn-sm">
+                      <i class="bi bi-emoji-smile me-1"></i>읽어보고 싶어요
+                    </button>
+                  </div>
+                </div>
+                <!-- 우측 지표 영역 -->
+                <div class="col-12 col-md-4 right-metrics">
+                  <div class="metrics-title">이 책 추천에 고려된 요소들</div>
+                  <div class="metrics-list my-2">
+                    <!-- 분야 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">0%</div>
+                      <div>분야</div>
+                    </div>
+                    <!-- 소울메이트 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">0%</div>
+                      <div>소울메이트</div>
+                    </div>
+                    <!-- 신간 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">0%</div>
+                      <div>신간</div>
+                    </div>
+                    <!-- 베스트 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">100%</div>
+                      <div>베스트</div>
+                    </div>
+                    <!-- 글로버 평점 -->
+                    <div class="metrics-item">
+                      <div class="progress-circle">9.79/10</div>
+                      <div>글로버 평점</div>
+                    </div>
+                  </div>
+                  <div class="keyword-pick">키워드 Pick</div>
+                </div>
+              </div>
+            </div>
+            <!-- /카드 2 -->
+          
+          </div>
+          </div>
+
+          <div
+          class="tab-pane fade"
+          id="clickRealtimeTabPane"
+          role="tabpanel"
+          aria-labelledby="click-realtime-pick-tab">
+          <div class="title-section mt-4">
+            <h1>클릭 실시간 Pick</h1>
+            <p>지금 실시간으로 인기 있고 있는 도서를 추천드려요!</p>
+          </div>
+        
+          <!-- 실시간 랭킹 헤더 (왼쪽 타이틀 / 오른쪽 기준 시각) -->
+          <div class="row ranking-header align-items-center">
+            <div class="col">
+              <h2>실시간 랭킹</h2>
+            </div>
+            <div class="col text-end">
+              <span class="time-info">2025.01.19 00:00 기준</span>
+            </div>
+          </div>
+        
+          <!-- 도서 카드 목록: 한 행에 최대 6개씩, 총 12개 예시 -->
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+            
+            <!-- 카드 1 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791193506516.jpg" 
+                  alt="초역 부처의 말"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">초역 부처의 말</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    264명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 2 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://image.yes24.com/goods/141133506/XL" 
+                  alt="내가 원하는 것을 나도 모를 때"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">내가 원하는 것을<br>나도 모를 때</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    136명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 3 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJdHxvHUDqQzEKuewYxvGz9c8B4i0BuYXbdA&s" 
+                  alt="몽테뉴의 살아있는 생각"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">몽테뉴의 살아있는 생각</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    121명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 4 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkstC-giBd-eyizQnxzSO08tbCo40Pbxn0xw&s" 
+                  alt="왜 당신은 다른 사람을 위해 살고 있는가"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">왜 당신은 다른 사람을<br>위해 살고 있는가</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    106명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 5 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://image.yes24.com/goods/109176896/XL" 
+                  alt="당신은 결국 무엇이든 해내는 사람"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">당신은 결국 무엇이든<br>해내는 사람</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    99명이 보는 중 </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 6 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://image.yes24.com/goods/141325420/XL" 
+                  alt="당신도 감정 소모 없이 말할 수 있습니다"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">당신도 감정 소모 없이 말할 수 있습니다</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    75명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 7 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9788970754284.jpg" 
+                  alt="시와 에세이"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">좋아하는 시에 대하여</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    62명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 8 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788994120966.jpg" 
+                  alt="지적 대화를 위한 넓고 얕은 지식"
+                >
+                <div class="ranking-card-body">
+
+                  <div class="ranking-card-title">지적 대화를 위한 넓고 얕은 지식 </div>
+                    
+                  <div class="view-count">
+                      <i class="fa-solid fa-eye"></i>
+                      54명이 보는 중
+                  </div>
+
+                </div>
+              </div>
+             </div>
+        
+            <!-- 카드 9 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThngC6ua1-WEkLsM6COtH2FpQnmAwJW9ewag&s" 
+                  alt="바다가 들리는 편의점"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">바다가 들리는 편의점</div>
+                  <div class="view-count" >
+                    <i class="fa-solid fa-eye"></i>
+                    48명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 10 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/9791140711970.jpg"
+                  alt="기록이라는 세계"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">기록이라는 세계</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    36명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 11 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://image.yes24.com/goods/141231108/XL"
+                  alt="나는 AI와 공부한다"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">나는 AI와 공부한다</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    28명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- 카드 12 -->
+            <div class="col">
+              <div class="ranking-card position-relative">
+                <img 
+                src="https://image.yes24.com/goods/141385967/XL"
+                  alt="행동하지 않으면 인생은 바뀌지 않는다"
+                >
+                <div class="ranking-card-body">
+                  <div class="ranking-card-title">행동하지 않으면 인생은 바뀌지 않는다</div>
+                  <div class="view-count">
+                    <i class="fa-solid fa-eye"></i>
+                    24명이 보는 중
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+          </div>
+
+          <div
+          class="tab-pane fade"
+          id="writerPickTabPane"
+          role="tabpanel"
+          aria-labelledby="writerPickTabPane">
+          <h4>작가 Pick</h4>
+          <p>실시간으로 가장 많이 클릭된 도서를 확인하세요.</p>
+          <ol>
+            <li>인기 도서 1</li>
+            <li>인기 도서 2</li>
+            <li>인기 도서 3</li>
+          </ol>
+          </div>
+
+          <div
+          class="tab-pane fade"
+          id="soulmatePickTabPane"
+          role="tabpanel"
+          aria-labelledby="soulmatePickTabPane">
+          <h4>소울메이트 Pick</h4>
+          <p>실시간으로 가장 많이 클릭된 도서를 확인하세요.</p>
+          <ol>
+            <li>인기 도서 1</li>
+            <li>인기 도서 2</li>
+            <li>인기 도서 3</li>
+          </ol>
+          </div>
+
+      </div>
+
+      
+    </div>
+      
+    <!--Footer-->
+
+      <!--top-footer-->
+      <hr class="none">
+        <div class="container d-flex justify-content-between none">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="ms-2"><strong>공지사항</strong></div>
+            <a href="#" class="ms-3 footer-textA text-dark">컬쳐랜드 시스템 점검안내</a>
+          </div>
+          <div class="d-flex align-items-center">
+            <div><strong>당첨자 발표</strong></div>
+            <a href="#" class="ms-4 me-5 footer-textA text-dark">
+              [인문/교양]《2026 이선화 교육학》 한줄평 이벤트 당첨자 발표</a>
+          </div>
+        </div>
+      <hr class="second-hr">
+
+      <!--bottom Footer -->
+      <footer class="d-flex footer pt-3 container kyobo">
+        <div>
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/img_logo_kyobo@2x.png"
+              alt="KYOBO"
+              class="logo"
+            />
+          </a>
+        
+          
+        <!--footer 좌측 -->
+          <div>
+            
+            <div class="footer-menu mb-4">
+              <div class="d-flex">
+                <a href="#" class="nav-link-first footer-link">회사소개</a>
+                <a href="#" class="nav-link footer-link">이용약관</a>
+                <a href="#" class="nav-link footer-link fw-bold">개인정보처리방침</a>
+                <a href="#" class="nav-link footer-link none">정소년보호정책</a>
+                <a href="#" class="nav-link footer-link none">대량주문안내</a>
+                <a href="#" class="nav-link footer-link none">협력사여러분</a>
+                <a href="#" class="nav-link footer-link">채용정보</a>
+                <a href="#" class="nav-link footer-link">광고소개</a>
+              </div>
+            </div>
+          
+            
+            <div class="company-info small text-muted none">
+              <div class="d-flex align-items-center">
+                <span>대표이사: 안병현, 김상훈</span>
+                <span class="mx-2">|</span>
+                <span>서울특별시 종로구 종로 1</span>
+                <span class="mx-2">|</span>
+                <span>사업자등록번호: 102-81-11670</span>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <span><strong>대표전화: 1544-1900(발신자 부담전화)</strong></span>
+                <span class="mx-2">|</span>
+                <span>FAX: 0502-987-5711(지역번호 공통)</span>
+                <span class="mx-2">|</span>
+                <span>서울특별시 통신판매업신고번호: 제 653호</span>
+                <button class="border ms-2">사업자정보확인 ></button>
+              </div>
+            </div>
+              
+            <div class="copyright small text-muted">
+              © KYOBO BOOK CENTRE
+            </div>
+          
+          </div>
+        </div>
+          
+
+          <!--footer 우측 -->
+            <!--footer 우측상단 -->
+            <div>
+            <div class="d-flex justify-content-end mt-3">
+              <div>
+                <div class="dropdown me-3 Family-Site">
+                  <button class="btn btn-outline-secondary dropdown-toggle pe-4 ps-4 pd-2 pt-2" type="button" data-bs-toggle="dropdown">
+                    Family Site
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Family Site 1</a></li>
+                    <li><a class="dropdown-item" href="#">Family Site 2</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#" class="ms-2"><i class="fas fa-play-circle fa-2x"></i></a>
+                <a href="#" class="ms-2"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="ms-2"><i class="fab fa-instagram fa-2x"></i></a>
+              </div>
+            </div>
+
+              <!--우측하단-->
+              <div class="mt-4 font-size ms-3 isms">
+                <div class="pt-2">토스페이먼츠 구매안전서비스 <button class="border ms-2">서비스 가입 확인 ></button></div>
+                <div class="pt-2">고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한</div>
+                <div>토스페이먼츠의 구매안전서비스를 이용하실 수 있습니다</div>
+
+                <div class="d-flex mt-3">
+                  
+                  <img src="https://isms.kisa.or.kr/main/images/sub/ISMS-P.png" height="50px" >
+                  
+                  <div>
+                    <div>정보관리체계</div>
+                    <div>ISMS 인증획득</div>
+                  </div>
+                  
+                  <div>
+                    <div class="ms-2">[인증범위] 인터넷 교보문고 및 브랜드 서비스 운영</div>
+                    <div class="ms-2">[유효기간] 2023.11.15 ~ 2026.11.14</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+    
+      </footer>
+    
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+     // 모든 하트 아이콘을 선택
+    const hearts = document.querySelectorAll('.heart-icon');
+
+    // 각 하트에 클릭 이벤트 추가
+    hearts.forEach((heart) => {
+      heart.addEventListener('click', () => {
+        if (heart.classList.contains('fa-regular')) {
+          // 빈 하트를 꽉 찬 하트로 변경
+          heart.classList.remove('fa-regular'); // 빈 하트 클래스 제거
+          heart.classList.add('fa-solid'); // 꽉 찬 하트 클래스 추가
+          heart.classList.add('liked'); // 빨간색 스타일 추가
+        } else {
+          // 꽉 찬 하트를 빈 하트로 변경
+          heart.classList.remove('fa-solid'); // 꽉 찬 하트 클래스 제거
+          heart.classList.add('fa-regular'); // 빈 하트 클래스 추가
+          heart.classList.remove('liked'); // 빨간색 스타일 제거
+        }
+      });
+    });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.getElementById('toggleBtn');
+  const toggleMenu = document.getElementById('toggleMenu');
+  let isOpen = false;
+
+  toggleBtn.addEventListener('click', function() {
+    isOpen = !isOpen;
+    toggleMenu.classList.toggle('show');
+    toggleBtn.parentElement.classList.toggle('active');
+  });
+
+  // 메뉴 외부 클릭시 닫기
+  document.addEventListener('click', function(event) {
+    const isClickInside = toggleBtn.contains(event.target) || toggleMenu.contains(event.target);
+    
+    if (!isClickInside && isOpen) {
+      isOpen = false;
+      toggleMenu.classList.remove('show');
+      toggleBtn.parentElement.classList.remove('active');
+    }
+  });
+});
+    </script>
+  </body>
+</html>

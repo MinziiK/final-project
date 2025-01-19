@@ -1,0 +1,716 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.top-extra-nav {
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .custom-btn {
+    background-color: transparent !important;
+    border: none !important;
+    color: #666 !important;
+    box-shadow: none !important;
+  }
+  
+  .custom-btn2 {
+    background-color: transparent !important;
+    border: none !important;
+    color: black !important;
+    box-shadow: none !important;
+    font-size: 16px;
+  }
+  
+  .custom-btn3 {
+    background-color: white !important;
+    border: 1px solid grey !important;
+    color: black !important;
+    box-shadow: none !important;
+    font-size: 15px;
+    padding: 5px 12px;
+    border-radius: 7px;
+  }
+  .font-size-12 {
+    font-size: 12px;
+  }
+  
+  .top-members-info {
+    font-size: 12px;
+    text-decoration: none;
+    color: #666;
+    margin-right: 15px;
+  }
+  
+  .icon {
+    margin-left: 10px;
+  }
+  
+  button {
+    border: none;
+    background: none;
+  }
+  
+  .top-nav {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .top-nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  
+  .main-nav {
+    padding: 10px 0;
+  }
+  
+  .main-nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+    padding: 8px 15px;
+    flex: 1;
+    width: 600px;
+    margin: 0 20px;
+  }
+  
+  .search-bar select {
+    border: none;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .search-bar input {
+    border: none;
+    flex: 1;
+    padding: 5px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sub-nav {
+    background: white;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .sub-nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .sub-nav-inner a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  
+  .top-nav-green {
+    color:#3c9a17;
+    font-weight: bold
+  }
+  
+  .top-nav-black {
+    color: #333333;
+  }
+  
+  .breadcrumb {
+    padding: 10px 0 10px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .breadcrumb a {
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+.contents_wrap{
+    width:100% ;
+    
+}
+li{list-style: none;}
+.funding_menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+.funding_menu_inner{
+    padding-bottom: 30px;
+}
+.logo_funding{
+    float: left;
+    margin-top: 2px;
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    background-size: 118px 28px;
+    background-image: url("https://contents.kyobobook.co.kr/resources/fo/images/common/ink/fund/img_funding@2x.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.list_funding_menu{
+    overflow: hidden;
+    display: block;
+    padding-left: 40px;
+    position: relative;
+    font-size: 0;
+    vertical-align: middle;
+}
+.list_funding_menu>a>li::after{
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    margin: 0 16px;
+    background-color: #d5d5d5;
+    content: "";
+  
+}
+
+
+.list_funding_menu>a{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ccc;
+    vertical-align: middle;
+}
+.contents_inner{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.swiper {
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  
+  .swiper-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .swiper-slide {
+    position: relative;
+    width: 586px;
+    box-sizing: border-box;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 10px; 
+  }
+
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+.img_box{
+    overflow: hidden;
+    display: flex;
+    height: 374px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+  
+  .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-content {
+    text-align: left;
+    width: 100%;
+    max-width: 584px;
+    margin-top: 22px;
+    box-sizing: border-box;
+  }
+  
+  .text-content h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.35;
+    word-break: break-all;
+  }
+  
+  .text-content p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: #767676;
+    word-wrap: break-word;
+  }
+  
+  /* 좌우 버튼 스타일 */
+  .swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* 버튼이 위로 올라오도록 */
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+/* 버튼의 위치 조정 */
+.swiper-button-next {
+    right: -30px; /* wrapper 밖으로 살짝 이동 */
+}
+
+.swiper-button-prev {
+    left: -30px; /* wrapper 밖으로 살짝 이동 */
+    transform: translateY(-50%) rotate(180deg); /* 왼쪽 버튼 회전 */
+}
+  
+  /* 얇은 화살표 디자인 */
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    content: '';
+    display: inline-block;
+    width: 10px; /* 화살표 길이 */
+    height: 10px; /* 화살표 높이 */
+    border: solid 1px #767676; /* 화살표의 색과 두께 */
+    border-width: 0 1px 1px 0; /* 화살표의 가로, 세로 두께 */
+    transform: rotate(90deg); /* 오른쪽 화살표 */
+  }
+  
+
+  /* autoplay-progress 스타일 */
+  .autoplay-progress {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #767676;
+    font-size: smaller;
+  }
+  
+  .autoplay-progress svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 2px;
+    stroke:#767676;
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  
+
+/*2번째슬라이드*/
+.middle_slide_section{
+    margin: 60px 0 0;
+}
+  .mySwiper_middle {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    height: 150px;
+    border-radius: 16px;
+  }
+
+  .swiper-slide_middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle_slide img {
+    width: 100%;
+  object-fit: cover;
+  }
+
+  /*펀딩이 곧 마감돼요*/
+  .funding_soon{
+    margin-top: 90px;
+  }
+  .funding_title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.35;
+    word-break: break-all;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+.funding_soon_contents_wrap{
+    display: flex;
+}
+.funding_soon_contents{
+    width: 282px;
+    margin-right: 24px;
+    box-sizing: border-box;
+}
+.soon_img_box{
+    display: flex;
+    height: 282px;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.soon_img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info_box{
+    margin-top: 16px;
+    position: relative;
+}
+.info_box .ing{
+    border: 1px solid lightgray;
+    color: #767676;
+    font-weight: 500;
+    margin: 4px 0 0 4px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    font-size: smaller;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+.info_box .ing_ing{
+    color: #474c98;
+    border: 1px solid #474c98;
+    background: #fff;
+    font-weight: 500;
+    margin: 4px 0 0 4px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    font-size: smaller;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+.icon{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    z-index: 1;
+    
+}
+button{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: rgb(0,0,0,0);
+    border: none;
+}
+  .ico_wish{
+    width: 18px;
+    height: 18px;
+    background: url("https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_heart_h18@2x.png") center no-repeat;
+    background-size: 18px 18px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+
+  }
+  .soon_title{
+    min-height: 46px;
+  }
+  .soon_title p{
+    overflow: hidden;
+    max-height: 46px;
+    font-size: 16px;  
+    line-height: 23px;
+    font-weight: 500;
+  }
+  .soon_title p:hover{
+    text-decoration: underline;
+  }
+  .wrapper.funding .container_wrapper .swiper_funding_special .funding_info_box .progress_comm {
+    margin-top: 12px;
+  }
+  .outer_half{
+    height: 100%;
+  }
+  .innder_half{
+    min-height: 20px;
+  }
+  .emph{
+    display: inline-block;
+    font-weight: 700;
+    color: #474c98;
+    vertical-align: middle;
+    float: left;
+    padding-top: 0;
+  }
+  .emph .txt_1 {
+    font-weight: 700;
+    color: #474c98;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .emph .txt_2{
+    font-weight: 700;
+    margin-left: 4px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Roboto", sans-serif;
+  }
+  .txt_com{
+    display: block;
+    float: right;
+    padding-top: 0;
+
+  }
+  .txt_com .txt_1{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #292929;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .txt_com .txt_2{
+    top: 1px;
+    font-size: 14px;
+    color: #767676;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.progress_com {
+    display: block;
+    overflow: hidden;
+    height: 4px;
+    border-radius: 5px;
+    margin-top: 12px;
+    width: 100%;
+
+}
+.hit{
+    margin-top: 12px;
+}
+
+.text_progress{
+    width: 100% !important;
+    background: linear-gradient(90deg, #3f5ed5 0%, #4aca74 100%);
+    height: 100%;
+    border-radius: 5px;
+}
+.p{
+    min-height: 12px;
+    margin-top: 9px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #767676;
+    text-align: right;
+    display: block;
+}
+
+/* 푸터 공통 */
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-top: 50px;
+  }
+  
+  .text-bold {
+    font-weight: bold;
+  }
+  /* 미디어 쿼리 */
+  @media (min-width: 1025px) {
+    .swiper-slide {
+      width: 586px;
+      margin-right: 20px; /* 슬라이드 간 간격을 더 좁게 설정 */
+    }
+  }
+  
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .swiper-slide {
+      width: 90%; /* 화면 크기에 맞춰 슬라이드 너비 조정 */
+      margin-right: 15px;
+    }
+  
+    .slide-content img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .text-content {
+      margin-top: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .swiper-slide {
+      width: 90%; /* 화면 크기에 맞춰 슬라이드 너비 조정 */
+      margin-right: 10px;
+    }
+  
+    .slide-content img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .text-content {
+      margin-top: 16px;
+    }
+  }
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .top-extra-nav {
+        padding: 10px 15px;
+    }
+
+    .top-nav-inner,
+    .main-nav-inner,
+    .sub-nav-inner,
+    .breadcrumb,
+    .contents_inner,
+    .mySwiper_middle {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .search-bar select,
+    .search-bar input,
+    .search-bar button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper-slide {
+        width: 90%; /* 모바일 화면에 적합한 슬라이드 크기 */
+        margin-right: 10px;
+    }
+
+    .img_box {
+        height: 200px; /* 이미지 크기 조정 */
+    }
+
+    .text-content h2 {
+        font-size: 20px; /* 텍스트 크기 조정 */
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .middle_slide_section {
+        margin: 40px 0;
+    }
+
+    .funding_soon_contents_wrap {
+        flex-direction: column; /* 모바일에서는 수직으로 나열 */
+    }
+
+    .funding_soon_contents {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .soon_img_box {
+        height: 200px; /* 이미지 크기 축소 */
+    }
+
+    .info_box .ing,
+    .info_box .ing_ing {
+        font-size: 12px;
+    }
+
+    .funding_title {
+        font-size: 20px;
+    }
+
+    .progress_com {
+        height: 6px; /* 진행 바 높이 축소 */
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 20px;
+        height: 20px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        width: 8px;
+        height: 8px;
+    }
+}

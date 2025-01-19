@@ -1,0 +1,121 @@
+body {
+    min-width: 1440px;
+    font-size: 14px;
+    font-family: "Roboto", "Noto Sans KR", "PingFang SC", "Apple SD Gothic Neo", "Microsoft YaHei UI", "Malgun Gothic", sans-serif;
+}
+
+/* PC 화면에서 최대 너비 1200px로 고정 */
+.container {
+    max-width: 1200px;
+}
+
+/* 모바일 화면에서 스타일 변경 */
+@media (max-width: 768px) {
+    
+}
+
+/* 커스터마이징 스타일 */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-nav {
+    flex-direction: row;
+}
+.nav-1 {
+    background-color: #f4f4f4;
+}
+.nav-1-l {
+    font-weight: 700;
+}
+.nav-1-l-tab {
+    width: 88px;
+    text-align: center;
+}
+.tab-book {
+    background-color: #474baa;
+}
+.tab-book a {
+    color: #fff;
+}
+.tab-ebook {
+    background-color: #1970e1;
+}
+.tab-ebook a {
+    color: #fff;
+}
+.tab-sam {
+    background-color: #06bbc0;
+}
+.tab-sam a {
+    color: #fff;
+}
+.tab-hot {
+    background-color: #e8422f;
+}
+.tab-hot a {
+    color: #fff;
+}
+.tab-story {
+    background-color: #fff;
+    border: #d5d5d5 1px solid;
+}
+.tab-story a {
+    color: #767676;
+}
+.tab-brand a {
+    font-size: 12px;
+    color: #595959;
+    margin-top: 2px;
+    font-weight: 400;
+}
+.nav-1-r {
+    font-size: 12px;
+    color: #595959;
+}
+.nav-23 {
+    background-color: #fff !important;
+    border-bottom: 1px solid #eaeaea;
+}
+.nav-2 {
+    padding-top: 15px;
+}
+.nav-logo img {
+    width: 180px;
+    height: 66px;
+}
+.nav-search {
+    width: 560px;
+}
+.nav-search button{
+    font-size: 14px;
+    --bs-btn-color: #000;
+    --bs-btn-border-radius: 2rem;
+    --bs-btn-border-color: #d5d5d5;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #d5d5d5;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #d5d5d5;
+}
+.nav-search .btn-left {
+    border-right-width: 0;
+}
+.nav-search .btn-right {
+    border-left-width: 0;
+}
+.nav-search input {
+    border-left: none; /* 왼쪽 보더 제거 */
+    border-right: none; /* 오른쪽 보더 제거 */
+}
+.nav-search i {
+    font-size: 18px;
+}
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
